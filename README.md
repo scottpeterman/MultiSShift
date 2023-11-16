@@ -10,7 +10,7 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/scottpeterman/MultiSShift/main/screen-shots/terminal1.png" alt="screen 1" width="400px">
   <hr>
-  <img src="https://raw.githubusercontent.com/scottpeterman/MultiSShift/main/screen-shots/terminal12.png" alt="screen 2" width="400px">
+  <img src="https://raw.githubusercontent.com/scottpeterman/MultiSShift/main/screen-shots/terminal2.png" alt="screen 2" width="400px">
 </div>
 
 
