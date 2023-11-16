@@ -4,7 +4,16 @@
 ## Overview
 `MultiSSHift Terminal` is an advanced SSH management tool designed for network professionals who require a robust and efficient way to manage multiple SSH sessions. Built with PyQt6 and integrating a web-based terminal interface, it offers a comprehensive solution for managing network devices and servers.
 
-## Key Features
+
+## Key Features<
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/scottpeterman/MultiSShift/main/screen-shots/terminal1.png" alt="screen 1" width="400px">
+  <hr>
+  <img src="https://raw.githubusercontent.com/scottpeterman/MultiSShift/main/screen-shots/terminal12.png" alt="screen 2" width="400px">
+</div>
+
+
 - **Session Management**: Effortlessly manage multiple SSH sessions with an intuitive tree-view interface. Organize and access your sessions with ease.
 - **Embedded Web View**: Integrated web view for seamless interaction with web-based management tools and documentation.
 - **Versatile Tools**: Includes built-in features such as a log viewer, file editor, and ad-hoc connection dialog, providing a one-stop solution for various network management tasks.
