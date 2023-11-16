@@ -1,0 +1,11 @@
+- folder_name: 0 - Linux
+  sessions:
+  - DeviceType: Linux
+    Model: NUC
+    SerialNumber: ''
+    SoftwareVersion: '22.04'
+    Vendor: Ubuntu
+    credsid: '1'
+    display_name: Example
+    host: 10.0.0.12
+    port: '22'

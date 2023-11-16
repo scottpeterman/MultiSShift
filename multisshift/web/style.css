@@ -1,0 +1,74 @@
+/* Set general styles */
+* {
+    background-color: #333333; /* Dark grey background */
+    color: #e0e0e0; /* Light grey text for readability */
+    border: 1px solid #444; /* Slight contrast for borders */
+}
+
+/* Style the main window background and text color */
+QMainWindow, QDialog {
+    background-color: #282828; /* Darker grey for main background */
+    color: #e0e0e0; /* Light grey for text */
+}
+
+/* Style toolbar, menubar, and status bar */
+QToolBar, QMenuBar, QStatusBar {
+    background-color: #376b34; /* Green for toolbars and menus */
+    color: #e0e0e0; /* Light grey for text */
+}
+
+/* Style buttons and tool buttons */
+QPushButton, QToolButton {
+    background-color: #303030; /* Dark grey for buttons */
+    color: #e0e0e0; /* Light grey for text */
+}
+
+QPushButton:hover, QToolButton:hover {
+    background-color: #376b34; /* Green for hover state */
+}
+
+QPushButton:pressed, QToolButton:pressed {
+    background-color: #2e5f2f; /* Darker green for pressed state */
+}
+
+/* Style tree widget */
+QTreeWidget {
+    background-color: #282828; /* Darker grey to match the main background */
+}
+
+QTreeWidget::item {
+    background-color: #333333; /* Dark grey for tree items */
+    color: #e0e0e0; /* Light grey for text */
+}
+
+QTreeWidget::item:selected {
+    background-color: #376b34; /* Green for selected items */
+    color: #e0e0e0;
+}
+
+QTreeWidget::item:hover {
+    background-color: #376b34; /* Green for hover state */
+    color: #e0e0e0;
+}
+
+/* Style text inputs */
+QLineEdit, QTextEdit {
+    background-color: #333333; /* Dark grey for input fields */
+    color: #e0e0e0; /* Light grey for text */
+}
+
+/* Style menus */
+QMenu {
+    background-color: #376b34; /* Green for menu background */
+    color: #e0e0e0; /* Light grey for text */
+}
+
+QMenu::item {
+    background-color: #376b34; /* Green for menu items */
+    color: #e0e0e0;
+}
+
+QMenu::item:selected {
+    background-color: #2e5f2f; /* Darker green for selected menu items */
+    color: #e0e0e0;
+}

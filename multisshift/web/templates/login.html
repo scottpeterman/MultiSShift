@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Login to SSH Terminal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black; /* Make the background black */
+            margin: 0; /* Remove default margin */
+            height: 100vh; /* Full height */
+            overflow: hidden; /* Hide scrollbars */
+        }
+        .container {
+            display: none; /* Hide the container */
+        }
+        /* The rest of your CSS */
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Login to SSH Terminal</h2>
+    <form action="/terminal" method="get">
+        <label for="hostname">SSH Host:</label>
+        <input type="text" id="hostname" name="hostname" required value="{{host}}">
+
+        <label for="port">SSH Port:</label>
+        <input type="number" id="port" name="port" required value="{{port}}">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required value="{{username}}">
+
+        <input type="input" id="auth_type" name="auth_type" value="{{auth_type}}">
+
+        <!-- Field for password or key file path -->
+        <label for="auth">Password/Key File:</label>
+        <input type="text" id="auth" name="auth" required value="{{auth}}">
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+</body>
+</html>

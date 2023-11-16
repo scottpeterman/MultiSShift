@@ -1,0 +1,19 @@
+ #loadingOverlay {
+    display: none; /* Make sure this is the ONLY display property for this selector */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#loadingOverlay p {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}

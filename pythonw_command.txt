@@ -1,0 +1,2 @@
+pythonw -m multisshift > output.log 2>&1
+powershell -Command "C:\Users\97685\multisshift\venv\Scripts\pythonw.exe -m multisshift > output.log 2>&1"
