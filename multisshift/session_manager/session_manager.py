@@ -244,6 +244,7 @@ class SessionManager(QTreeWidget):
         self.current_file = yaml_file
 
         normalized_data = self.normalize_and_combine_sessions(data)
+        self.clear()
         for folder in normalized_data:
             folder_item = QTreeWidgetItem([folder['folder_name']])
             folder_item.is_folder = True
