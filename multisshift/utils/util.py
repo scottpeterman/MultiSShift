@@ -157,12 +157,14 @@ def create_sftp_key():
         file.write(test_private_key)
 
 def create_settings():
-    content = '''defaults:
-  host: "10.0.0.1"
-  port: 22
-  username: "username"
-  key_path: "C:/Users/user/.ssh/id_rsa"
-  theme: "dark"  # or "light"'''
-    fh = open("settings.yaml", "w")
-    fh.write(yaml.safe_dump(content))
-    fh.close()
+    content = {
+        "host": "10.0.0.1",
+        "port": 22,
+        "username": "username",
+        "key_path": "C:/Users/user/.ssh/id_rsa",
+        "theme": "dark"  # or "light"
+    }
+    defaults = {'defaults':content}
+    # Write the dictionary to a file in YAML format
+    with open("settings.yaml", "w") as fh:
+        yaml.safe_dump(defaults, fh)
