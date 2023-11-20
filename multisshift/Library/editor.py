@@ -21,10 +21,11 @@ class Editor(QtWebEngineWidgets.QWebEngineView):
         self.new_file = False
 
         # Load the HTML file for the editor
-        current_dir = os.path.dirname(os.path.abspath(__file__))
-        ace_html = current_dir.split("Library")[0] + "web/ace/editor.html"
+        current_dir = os.path.dirname(__file__)
+        ace_html_path = os.path.join(current_dir, '..', 'web', 'ace', 'editor.html')
+        print(f"loading... {ace_html_path}")
 
-        self.load(QUrl.fromLocalFile(ace_html))
+        self.load(QUrl.fromLocalFile(ace_html_path))
 
         # Connect loadFinished signal to initializeEditor slot
         self.loadFinished.connect(self.initializeEditor)

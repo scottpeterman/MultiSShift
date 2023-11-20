@@ -37,6 +37,7 @@ setup(
         "pycparser==2.21",
         "pydantic==2.4.2",
         "pydantic_core==2.10.1",
+        "pyserial==3.5",
         "PyNaCl==1.5.0",
         "PyQt6==6.6.0",
         "PyQt6-Qt6==6.6.0",

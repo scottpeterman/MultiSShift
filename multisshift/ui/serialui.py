@@ -70,9 +70,11 @@ class Ui_SerialWidget(QWidget):
             lambda data: self.view.page().runJavaScript(f"window.handle_output({json.dumps(data)})"))
 
         # Load the terminal HTML
-        current_dir = os.path.dirname(os.path.abspath(__file__))
+
+        current_dir = os.path.dirname(__file__)
         parent_dir = os.path.dirname(current_dir)
-        terminal_html = os.path.join(parent_dir, "serialassets", "qtserialcon.html")
+        terminal_html = os.path.join(parent_dir, 'web', "serialassets", "qtserialcon.html")
+        print(f"loading... {terminal_html}")
         self.view.load(QUrl.fromLocalFile(terminal_html))
 
         layout.addWidget(self.view)

@@ -268,20 +268,21 @@ class MainWindow(QMainWindow):
         toolbar = QToolBar("Main Toolbar")
         self.addToolBar(toolbar)
 
-        # Add TFTP button with an icon
-        dir_path = os.path.dirname(os.path.realpath(__file__))  # Get the directory of the current file
 
         #adhoc connection
+        current_dir = os.path.dirname(__file__)
 
-        icon_path = os.path.join(dir_path, "images", "terminal.svg")  # Construct the icon path
+        icon_path = os.path.join(current_dir, 'images', 'terminal.svg')
+        print(f"loading... {icon_path}")
         adhoc_icon = QIcon(icon_path)
         adhoc_action = QAction(adhoc_icon, "Connect", self)
         adhoc_action.triggered.connect(self.adhoc_action_triggered)  # Connect to a method
         toolbar.addAction(adhoc_action)
 
-        icon_path = os.path.join(dir_path, "images", "bolt.svg")  # Construct the icon path
+        icon_path = os.path.join(current_dir, 'images', 'bolt.svg')
+        print(f"loading... {icon_path}")
         serial_icon = QIcon(icon_path)
-        serial_action = QAction(serial_icon, "Connect", self)
+        serial_action = QAction(serial_icon, "Serial", self)
         serial_action.triggered.connect(self.serial_action_triggered)  # Connect to a method
         toolbar.addAction(serial_action)
 
